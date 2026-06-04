@@ -1,15 +1,15 @@
 class Pelper < Formula
   desc "A terminal DX helper that brings your everyday dev tools into one TUI"
   homepage "https://github.com/phibersoft/pelper"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/phibersoft/pelper/releases/download/v0.2.0/pelper-aarch64-apple-darwin.tar.xz"
-      sha256 "13356500ab75b3b5425c4205fba3609478c75f3ef6b750bad1db34e9b86fc3e1"
+      url "https://github.com/phibersoft/pelper/releases/download/v0.3.0/pelper-aarch64-apple-darwin.tar.xz"
+      sha256 "070a25fd9646bad17d2dc097144f2cdf94a875a203ddefca787a3b137cff0eb0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/phibersoft/pelper/releases/download/v0.2.0/pelper-x86_64-apple-darwin.tar.xz"
-      sha256 "4790e3f073e14ee5352ef17b02967f2ea584479a07a8c8b8758a6bb8b06d263f"
+      url "https://github.com/phibersoft/pelper/releases/download/v0.3.0/pelper-x86_64-apple-darwin.tar.xz"
+      sha256 "4d2ee27a2b5877e24427fcfd2e06756dc9ec9d16b011ae402874f770ee2158f0"
     end
   end
   license "MIT"
