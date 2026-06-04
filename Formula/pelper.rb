@@ -1,22 +1,23 @@
 class Pelper < Formula
   desc "A terminal DX helper that brings your everyday dev tools into one TUI"
   homepage "https://github.com/phibersoft/pelper"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/phibersoft/pelper/releases/download/v0.1.0/pelper-aarch64-apple-darwin.tar.xz"
-      sha256 "0025c35c428f94e264054d07b695fb16d09c714cf02220c60ab7234ebaeae3fb"
+      url "https://github.com/phibersoft/pelper/releases/download/v0.2.0/pelper-aarch64-apple-darwin.tar.xz"
+      sha256 "13356500ab75b3b5425c4205fba3609478c75f3ef6b750bad1db34e9b86fc3e1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/phibersoft/pelper/releases/download/v0.1.0/pelper-x86_64-apple-darwin.tar.xz"
-      sha256 "ee6976ec072b13d99ad38673a28fe4df2c2a3ca435b5a0490d374fa68d297cf3"
+      url "https://github.com/phibersoft/pelper/releases/download/v0.2.0/pelper-x86_64-apple-darwin.tar.xz"
+      sha256 "4790e3f073e14ee5352ef17b02967f2ea584479a07a8c8b8758a6bb8b06d263f"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
-    "x86_64-apple-darwin":  {},
+    "aarch64-apple-darwin":  {},
+    "x86_64-apple-darwin":   {},
+    "x86_64-pc-windows-gnu": {},
   }.freeze
 
   def target_triple
